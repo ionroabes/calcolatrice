@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calcolatrice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="stile.css" rel="stylesheet" type="text/css" >
+    
+</head>
+<body class="row">
+    <div class="col-4 container">
+        <div class="row">
+                <input id="input" type="text" class="col form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="row">
+            <button data-num="7" type="button" class="num col-2 btn btn-light">7</button>
+            <button data-num="8" type="button" class="num col-2 btn btn-light">8</button>
+            <button data-num="9" type="button" class="num col-2 btn btn-light">9</button>
+            
+
+            <button data-oper="+" id="somma"type="button" class="op col-3 btn btn-light">+</button>
+            <button data-oper="-" id="differenza" type="button" class="op col-3 btn btn-light">-</button>
+        </div>
+        <div class="row">
+            <button data-num="4" type="button" class="num col-2 btn btn-light">4</button>
+            <button data-num="5" type="button" class="num col-2 btn btn-light">5</button>
+            <button data-num="6" type="button" class="num col-2 btn btn-light">6</button>
+
+            <button data-oper="*" id="prodotto"  type="button" class="op col-3 btn btn-light">*</button>
+            <button data-oper="/" id="quoziente"  type="button" class="op col-3 btn btn-light">/</button>
+        </div>
+        <div class="row">
+            <button data-num="1" type="button" class="num col-2 btn btn-light">1</button>
+            <button data-num="2" type="button" class="num col-2 btn btn-light">2</button>
+            <button data-num="3" type="button" class="num col-2 btn btn-light">3</button>
+            
+            <button data-uguale="=" id="risultato" type="button" class="ris col-6 btn btn-warning">=</button>
+        </div>
+        <div class="row">
+            <button data-num="0" type="button" class="num col-6 btn btn-light">0</button>
+            <button data-uguale="ce" id="cancella" type="button" class="ce col-6 btn btn-danger">ce</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="calcolatrice.js"></script>
+</body>
+</html>
